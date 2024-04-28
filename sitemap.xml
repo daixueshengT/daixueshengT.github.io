@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://daixueshengt.github.io/posts/da03094c.html</loc>
+    <loc>https://daixueshengt.github.io/posts/4a17b156.html</loc>
     
     <lastmod>2024-04-28</lastmod>
     
@@ -11,7 +11,16 @@
   </url>
   
   <url>
-    <loc>https://daixueshengt.github.io/posts/4a17b156.html</loc>
+    <loc>https://daixueshengt.github.io/posts/8cf5ddd9.html</loc>
+    
+    <lastmod>2024-04-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://daixueshengt.github.io/posts/da03094c.html</loc>
     
     <lastmod>2024-04-28</lastmod>
     
@@ -55,6 +64,13 @@
   
   <url>
     <loc>https://daixueshengt.github.io/categories/%E7%94%9F%E6%B4%BB%E6%97%A5%E8%AE%B0/</loc>
+    <lastmod>2024-04-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://daixueshengt.github.io/categories/happy/</loc>
     <lastmod>2024-04-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
