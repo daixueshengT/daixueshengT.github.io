@@ -4,6 +4,106 @@
   
     
     <entry>
+      <title>职场小白军规</title>
+      <link href="/posts/9bdce6af.html"/>
+      <url>/posts/9bdce6af.html</url>
+      
+        <content type="html"><![CDATA[<p>当学生的时候，老师有义务回答你的问题</p><p>但是在职场，没人有这个义务，凡事先求已后求人</p><p><img src="https://img2.imgtp.com/2024/05/28/skWfPQgT.jpg" alt=""></p><h3 id="心态调整"><a href="#心态调整" class="headerlink" title="心态调整"></a>心态调整</h3><ul><li>做、学、问，三件事，做：学：问=2:2:1</li><li>比起学习的你，其他人更希望看到在做事的你</li><li>少问<code>是什么</code>，<code>为什么</code>，<code>怎么做</code></li><li>要闻就问 <code>我这样做对不对？</code>，<code>我打算这么做可以么？</code>，<code>我这么做哪里不合适？</code></li><li>有问题优先找师傅，如果没有固定师傅，就去问问招你进来的领导，让他帮你指定一个师傅</li></ul><h3 id="硬件"><a href="#硬件" class="headerlink" title="硬件"></a>硬件</h3><ul><li>电脑必装笔记软件，与手机云同步</li><li>常备便签纸，再买个好本子，配两只好笔，推荐Pentel+荧光笔</li><li>低调，别太显眼，不要把自己整滴过于帅或者漂亮，除非你的工作本身就跟颜值有关</li></ul><h3 id="执行"><a href="#执行" class="headerlink" title="执行"></a>执行</h3><p>别人交代的任务，尽可能的要当场复述重点并确认，目标及时间节点要卡准</p><h3 id="实习"><a href="#实习" class="headerlink" title="实习"></a>实习</h3><p>两个目标：实现、学习。</p><p>大爷心态：实习（工作）是双向的，公司要人干活又缺钱，别PUA自己，别让自己被PUA</p><p>初期框架意识：对业务全程掌握感的重要性</p><p>中期差不多意识：合理分配自己的时间精力，批量化分配70分的东西；并且多沟通，向上管理</p><p>后期观察判断意识：不要all in 转正。你首先是自己的产品经理，要借助平台撬动更大的资源，做好自己这款产品。</p><p><code>世界上成功的产品经理只有一种，那就是用自己的方式度过这一生。</code></p><h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>正常不需要新人站队，如果要站，你师傅站哪你站哪</p><p>有些事坚持做就好了，不用想太多。没有必要短期上太高的强度，没有必要。习惯细水长流</p><p>没有必要过度安排和计划，以致过渡的压力与焦虑，走一步看一步，如今计划赶不上变化。船到桥头自然直</p><p>谁不向往更好的生活，眼界打开，自身的基础素质够高，才能走的更远。</p><p>不忘探索生活与热爱，活着的本质就是现在。</p><p>或许有时要向钱低头，但也要找到难得的兴趣所在，把自己的时间付给有价值的事情。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 非技术杂记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 随记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>经典前端面试题</title>
+      <link href="/posts/c993a543.html"/>
+      <url>/posts/c993a543.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-冒泡排序"><a href="#1-冒泡排序" class="headerlink" title="1.冒泡排序"></a>1.冒泡排序</h2><p><img src="https://img2.imgtp.com/2024/05/27/iU4gPmmD.png" alt="冒泡排序原理图"></p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 升序的排序  冒泡</span></span><br><span class="line"><span class="keyword">let</span> arr = [<span class="number">5</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">1</span>,<span class="number">2</span>];</span><br><span class="line"><span class="comment">// 轮数</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">0</span>;i&lt;arr.<span class="property">length</span>-<span class="number">1</span>;i++)&#123;</span><br><span class="line">    <span class="comment">// 次数</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">let</span> j=<span class="number">0</span>;j&lt;arr.<span class="property">length</span>-<span class="number">1</span>-i;j++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(arr[j]&gt;arr[j+<span class="number">1</span>])&#123;</span><br><span class="line">            <span class="keyword">let</span> tmp = arr[j];</span><br><span class="line">            arr[j]=arr[j+<span class="number">1</span>];</span><br><span class="line">            arr[j+<span class="number">1</span>]=tmp;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(arr);</span><br></pre></td></tr></table></figure><h2 id="2-反转数组"><a href="#2-反转数组" class="headerlink" title="2.反转数组"></a>2.反转数组</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">5</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">1</span>,<span class="number">2</span>];</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">0</span>;i&lt;arr.<span class="property">length</span>/<span class="number">2</span>;i++)&#123;</span><br><span class="line">    <span class="keyword">var</span> tmp = arr[i];</span><br><span class="line">    arr[i]=arr[arr.<span class="property">length</span>-<span class="number">1</span>-i];</span><br><span class="line">    arr[arr.<span class="property">length</span>-<span class="number">1</span>-i]=tmp;</span><br><span class="line">&#125;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(arr);</span><br></pre></td></tr></table></figure><h2 id="3-去掉数组中重复性的数据"><a href="#3-去掉数组中重复性的数据" class="headerlink" title="3.去掉数组中重复性的数据"></a>3.去掉数组中重复性的数据</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 原数组</span></span><br><span class="line"><span class="keyword">let</span> arr = [<span class="number">5</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">5</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">5</span>];</span><br><span class="line"><span class="comment">// 新数组</span></span><br><span class="line"><span class="keyword">let</span> t=[];</span><br><span class="line">t[<span class="number">0</span>]=arr[<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">1</span>;i&lt;arr.<span class="property">length</span>;i++)&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">let</span> k=<span class="number">0</span>;k&lt;t.<span class="property">length</span>;k++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(t[k]==arr[i]) <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">if</span>(k==t.<span class="property">length</span>-<span class="number">1</span>)&#123;</span><br><span class="line">            t.<span class="title function_">push</span>(arr[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(t);</span><br></pre></td></tr></table></figure><h2 id="4-用css创建一个三角形"><a href="#4-用css创建一个三角形" class="headerlink" title="4.用css创建一个三角形"></a>4.用css创建一个三角形</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 用css创建一个三角形 --&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">#box&#123;</span><br><span class="line">width: 0px;</span><br><span class="line">height: 0px;</span><br><span class="line">border: 100px solid;</span><br><span class="line"></span><br><span class="line">border-top-color: red;</span><br><span class="line">border-right-color: transparent;</span><br><span class="line">border-bottom-color: transparent;</span><br><span class="line">border-left-color: transparent;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line"></span><br><span class="line">&lt;div id=&quot;box&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure><h2 id="5-rem适配"><a href="#5-rem适配" class="headerlink" title="5.rem适配"></a>5.rem适配</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>test<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 实现移动端 rem适配 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">    *&#123;</span></span><br><span class="line"><span class="language-css">      <span class="attribute">margin</span>: <span class="number">0</span>;</span></span><br><span class="line"><span class="language-css">      <span class="attribute">padding</span>: <span class="number">0</span>;</span></span><br><span class="line"><span class="language-css">    &#125;</span></span><br><span class="line"><span class="language-css">    <span class="selector-id">#box</span>&#123;</span></span><br><span class="line"><span class="language-css">      <span class="attribute">width</span>: <span class="number">0.5rem</span>;</span></span><br><span class="line"><span class="language-css">      <span class="attribute">height</span>:<span class="number">0.5rem</span>;</span></span><br><span class="line"><span class="language-css">      <span class="attribute">background</span>: red;</span></span><br><span class="line"><span class="language-css">    &#125;</span></span><br><span class="line"><span class="language-css">    <span class="comment">/* html根元素字体大小设置屏幕区域的宽 */</span></span></span><br><span class="line"><span class="language-css">  </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">  <span class="variable language_">window</span>.<span class="property">onload</span> = <span class="keyword">function</span>(<span class="params"></span>)&#123;</span></span><br><span class="line"><span class="language-javascript">    <span class="comment">// 获取屏幕区域的宽度</span></span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">var</span> width= <span class="variable language_">document</span>.<span class="property">documentElement</span>.<span class="property">clientWidth</span>;</span></span><br><span class="line"><span class="language-javascript">    <span class="comment">// 获取html</span></span></span><br><span class="line"><span class="language-javascript">    <span class="keyword">var</span> htmlNode=<span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;html&#x27;</span>);</span></span><br><span class="line"><span class="language-javascript">    <span class="comment">// 设置字体大小</span></span></span><br><span class="line"><span class="language-javascript">    htmlNode.<span class="property">style</span>.<span class="property">fontSize</span>=width+<span class="string">&#x27;px&#x27;</span>;</span></span><br><span class="line"><span class="language-javascript">  &#125;</span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 面试题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 八股 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>前端项目打包上线</title>
+      <link href="/posts/987bf438.html"/>
+      <url>/posts/987bf438.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="前端项目上线"><a href="#前端项目上线" class="headerlink" title="前端项目上线"></a>前端项目上线</h2><h3 id="1-项目打包"><a href="#1-项目打包" class="headerlink" title="1.项目打包"></a>1.项目打包</h3><ul><li>我们开发用的脚手架其实就是一个微型服务器，用于:支撑开发环境、运行代理服务器等。</li><li>打包完的文件中不存在: <code>.vue</code>、<code>.jsx</code>、<code>.less</code> 等文件，而是:html、css、js 等。</li><li>打包后的文件，不再借助脚手架运行，而是需要部署到服务器上运行。</li><li>打包前，请务必梳理好前端项目的 <code>ajax</code>封装(请求前缀、代理规则等)</li></ul><h2 id="2-本地服务器部署"><a href="#2-本地服务器部署" class="headerlink" title="2.本地服务器部署"></a>2.本地服务器部署</h2><h2 id="3-nginx-服务器部署"><a href="#3-nginx-服务器部署" class="headerlink" title="3.nginx 服务器部署"></a>3.nginx 服务器部署</h2><h3 id="3-1-nginx-简介"><a href="#3-1-nginx-简介" class="headerlink" title="3.1.nginx 简介"></a>3.1.nginx 简介</h3><p>Nginx(发音为“engine-x”)是一款高性能的 HTTP 服务器和反向代理服务器，同时也是一个IMAP/POP3/SMTP 代理服务器。Nginx最初由 lgor Sysoev 编写，于 2004年发布。它以其高性能、高稳定性、丰富的功能集和低系统资源消耗而闻名，主要功能有:<br>1.反向代理<br>2.负载均衡<br>3.静态内容服务<br>4.HTTP/2 支持<br>5.SSL/TLS 支持<br>6.高速缓存</p><p><img src="https://img2.imgtp.com/2024/05/24/ameDRWn8.png" alt="1655883039"></p><h2 id="4-云服务器部署"><a href="#4-云服务器部署" class="headerlink" title="4.云服务器部署"></a>4.云服务器部署</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术杂记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 随记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>产品入门记录</title>
+      <link href="/posts/f1288e52.html"/>
+      <url>/posts/f1288e52.html</url>
+      
+        <content type="html"><![CDATA[<p>产品岗最终要的是实习经历 做产品的经历</p><p>star法则     描述项目经历 实习经历</p><p>Situation（情景）、Task（任务）、Action（行动）和Result（结果）</p><p>1、STAR法则，说清背景，结果要尽可能量化</p><p>2、提取产品关键词在前，方便HR阅览</p><p>3、自己尝试去将过往经历进行优化，去写对应的文档、去输出对应的框架图</p><p>工作职责</p><p>需求挖掘</p><p>产品设计</p><p>产品优化</p><p>上线效果</p><p>其中简历的个人技能与评价部分</p><p>个人技能</p><ul><li>计算机技能:Axure、Visio、Xmind、figma、墨刀、办公软件三件套、数据分析软件SQL等</li><li>语言技能:英语四六级、托福雅思等</li></ul><p>获奖情况</p><ul><li>奖项不要写太多了，该模块没有都可以…</li></ul><p>自我评价</p><ul><li>自我评价不要用大量形容词堆砌，多用动词，数量词，如坚持每月阅读5本互联网相关数据，并做读书笔记;慎用形容词，比如严谨认真，刻苦努力等</li></ul><p>产品最重要的是面试</p><p>产品最常见的灵魂三问<br>1、产品经理是什么，团队中什么样的角色?<br>2、产品经理应该具备什么特质，什么是产品思维?<br>3、产品经理日常的工作是什么，具体是？</p><p>群面</p><p>一、产品运营策划题</p><ol><li>明确目标用户</li><li>用户需求及痛点</li><li>产品解决方案</li></ol><p>AARRR海盗模型</p><p>提高触达用户数</p><p>提高用户活跃度</p><p>提高用户粘性</p><p>提高用户付费数</p><p>二、排序策略题</p><ol><li>考察逻辑思维</li><li>列出评分体系</li><li>列出打分框架</li></ol><p>什么是一个好的产品</p><ol><li>解决用户的需求 </li><li>有一定的用户粘性 </li><li>有完整的产品体验</li></ol><p>群面的心态：要认识到群面的本质是推动方案的形成，要合作而不是零和博弈。同时，要自信一点。</p><p>自我介绍：尽量说一些和题目、团队有关的经历、专业知识，少谈题外话。</p><p>自由讨论：一开始的时候要站出来说要3分钟的时间来看题目，3分钟之后给后面的时间划分出一个框架出来。</p><p>观点如何出来？</p><p>横向拆解：需求、用户、场景</p><p>纵向拆解：前中后，比如设计一种购物app，分析购物前、购物中、购物后</p><p>如果没有观点的时候，使用复读机战略。不断去重复别人的观点（询问式）</p><p>要注意不要将自己的角色框死了，随机应变。</p><p>要有打断别人的勇气。如果讨论没有结论，就会团灭，所以当一个人发言很垃圾的时候，一定要去打断、拉回来。</p><p>初次群面体验</p><p><img src="https://img2.imgtp.com/2024/05/24/4bBqlpdl.png" alt="群面题"></p><p>讨论得出：2,3,8,9,10.</p><p>群面总结：</p><p>Leader</p><p>Timer</p><p>小组成员</p><p>Recorder</p><p>reporter</p><p>洞察力 </p><p>优先级的能力 挑资源</p><p>合作能力</p><p>抗压能力</p><p>决策能力</p><p>创新思维</p><p>成本控制</p><p>能否被人记住</p><p>近期读《幕后产品》脑图</p><p><img src="https://img2.imgtp.com/2024/05/24/n79jCxeI.png" alt="幕后产品"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 非技术杂记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 随记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>防抖与节流</title>
       <link href="/posts/100fa4c9.html"/>
       <url>/posts/100fa4c9.html</url>
