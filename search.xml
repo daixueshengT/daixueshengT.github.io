@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Wed Oct 02 2024 00:00:00 GMT+0000 (Coordinated Universal Time)</title>
+      <link href="/posts/100fa4d5.html"/>
+      <url>/posts/100fa4d5.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="websocket"><a href="#websocket" class="headerlink" title="websocket"></a>websocket</h2><p>WebSocket是一种协议  实时通讯利器</p><p>设计用于提供低延迟、全双工和长期运行的连接</p><p>WebSocket出现前的解决方案</p><p>轮询：客户端定期向服务器发送请求</p><p>长轮询：在客户端发出请求后，保持连接打开，等待新数据响应后再关闭连接</p><p>Comet：保持长连接，在返回请求后继续保持连接打开</p><p>WebSocket的优势</p><p>双向实时通信：允许在单个、长时间的连接上进行双向实时通信。在需要快速实时更新的应用程序里，比http更加高效</p><p>降低延迟：链接一旦建立便会保持开放，数据可以在客户端和服务器之间以比http更低的延迟进行传输</p><p>更高效的资源利用：可以减少重复请求和响应的开销，因为它的连接只需要建立一次</p><p>为什么需要心跳机制？</p><p>为了保持 WebSocket 稳定的长连接，在连接建立之后，服务器和客户端之间通过心跳包来保持连接状态，以防止连接因为长时间没有数据传输而被切断。</p><p>一种特殊的数据包!</p><p>不包含任何实际数据，仅用来维持连接状态</p><p>一个空数据帧</p><p>定期发送，确保链接仍然有效，避免长时间没有数据传输而被中断</p><p>如果一段时间内没有收到对方的心跳包，就可以认为连接已经断开</p><p>WebSocket 的限制</p><p>不提供加密功能：如果有安全上的需求，需采用其他方式来确保安全性，如:SSL协议，设置黑白名单</p><p>不支持古老的浏览器：不支持IE10 以前的版本。需要使用 AJAX或者其他方式来进行替代</p><p>优化很重要：保持长连接需要服务器不断地维护和处理连接状态，需要优化性能</p><h2 id="什么是promise？"><a href="#什么是promise？" class="headerlink" title="什么是promise？"></a>什么是promise？</h2><p>是一种用于管理异步操作的对象基于状态机的概念，可以处于三种状态</p><p>Pending-等待中</p><p>Fulfilled-已完成</p><p>Rejected-已拒绝</p><p>Promise引入链式调用</p><p>更流程地处理多个异步操作，避免深陷层层嵌套的回调函数中</p><p>promise.all</p><p>使用场景：</p><p>需求：处理多个可能出现错误的异步操作，如果其中任何一个失败，就记录错误。</p><p>社交媒体应用发帖：</p><ul><li>用户可以创建帖子并上传多张照片</li><li>当用户提交时，同时上传所有照片</li><li>所有图片上传完成后，才能创建帖子</li></ul><p>promise.race</p><p>参数也是一个数组，返回结果是一个Promise对象，Promise状态为数组中最先返回结果的状态</p><p>实际应用：</p><ul><li>先尝试本地缓存</li><li>如果时间过久则获取服务器</li></ul><h2 id="浏览器存储-Cookie-Local-Storage-Session-Storage"><a href="#浏览器存储-Cookie-Local-Storage-Session-Storage" class="headerlink" title="浏览器存储: Cookie + Local Storage + Session Storage"></a>浏览器存储: Cookie + Local Storage + Session Storage</h2><p>http是一种无状态的协议 实际web应用中需要保存状态信息</p><p>cookie 是由服务端产生的内容，发送到浏览器保存本地，Cookie被来回传递，所以它主要就用于记录用户的 会话状态、身份验证和跟踪用户的行为等。</p><p>Cookie优点：</p><ul><li>在浏览器和服务器间来回传递，适用于跟踪用户行为</li><li>可以手动设置过期时间，灵活调节存储时间</li></ul><p>缺点：</p><ul><li>每次请求都会携带Cookie数据，增加流量浪费性能</li><li>在http中明文传输不够安全，容易被篡改</li><li>存储容量小，一般为4KB</li></ul><p>localStorage优点：</p><ul><li>存储容量较大，一般为 5M</li><li>存储的数据在客户端浏览器可以永久保存，不担心丢失</li><li>操作方便，API友好能通过 JavaScript 直接访问</li></ul><p>缺点：</p><ul><li>一网站只能访问自己域下的 LS</li><li>不支持在不同浏览器间共享数据</li></ul><p>sessionStorage优点：</p><ul><li>数据只存储在客户端</li><li>刷新页面仍有原来会话数据</li><li>每个标签/窗口间数据独立</li></ul><p>缺点：</p><ul><li>不适合长期存储</li><li>数据不共享，使用场景有限</li></ul><p>什么时候能用到SessionStorage</p><ul><li>假设有一个多步骤表单流程</li><li>用户在填写过程中可以点击 上一步/下一步 修改数据</li><li>使用 Session Storage 暂存内容</li></ul><p>三者相同点：都保存在浏览器端、不支持跨域</p><p>不同点</p><div class="table-container"><table><thead><tr><th></th><th>Cookie</th><th>localstorage</th><th>SessionStorage</th></tr></thead><tbody><tr><td>存储内容是否发送到服务器</td><td>每次请求都会发送</td><td>只保存本地，不与服务器发送任何交互</td><td>只保存本地，不与服务器发送任何交互</td></tr><tr><td>数据存储大小上的不同</td><td>不能超过4KB</td><td>可以达到5MB</td><td>可以达到5MB</td></tr><tr><td>存储数据有效期限不同</td><td>需要自行设置失效时间</td><td>永久有效</td><td>关闭浏览器前有效</td></tr><tr><td>作用域不同</td><td>同源同窗口都是共享的</td><td>同源同窗口都是共享的</td><td>不同窗口不共享</td></tr></tbody></table></div><p>选择Cookie：在客户端和服务器之间共享数据+长期存储<br>选择Local Storage：只在客户端长期存储 +无需与服务器交互<br>选择Session Storage：只在客户端 + 会话期间暂存</p><h2 id="https-网络传输协议"><a href="#https-网络传输协议" class="headerlink" title="https:网络传输协议"></a>https:网络传输协议</h2><p>加密的两种基本类型</p><p>对称加密：加密方与解密方共用一套秘钥</p><p>非对称加密：基于成对的密钥对，加密方与解密方分别持有公钥与私钥</p><p>对称加密弊端：很难安全地告知双方这套秘钥</p><p>非对称加密弊端：所需算力远大于对称加密</p><p>重点：HTTPS 正是通过先利用非对称加密传输对称加密的密钥</p><p>再利用对称加密传输实际内容这样的方式，保证了它的安全性</p><p>电子证书：就是由第三方机构开具的证明，其中写明了xx公钥属于xx域名</p><p>如果你要访问的是这个域名，证书上就是你要使用的公钥</p><p>明文传输密码没什么安全隐患？当然也不是，  https 网络传输一个基本的安全保障</p><p>https下依然会受到中间人攻击，采用更多层次的加密手段，代表着更高的破解成本，也会带来更安全地信息传输 </p><p>HTTPS 是个应用层的协议，在明文内容离开和到达浏览器的时候，浏览器已经分别完成了加密与解密</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术杂记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 知识点 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>2024-9-27</title>
       <link href="/posts/100fa4d4.html"/>
       <url>/posts/100fa4d4.html</url>
